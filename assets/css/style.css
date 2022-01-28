@@ -1,0 +1,121 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.cabecera {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.contenido__listadnoticias {
+  width: 700px;
+  float: left;
+}
+.contenido__noticia {
+  width: 210px;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.cuerpo {
+  width: 210px;
+  height: 300px;
+}
+
+.cuerpo p {
+  padding: 5px 10px;
+}
+
+/*------------Menu Section---------------------*/
+body * {
+  font-family: "lato", "sans serif";
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  align-content: flex-end;
+  color: red;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.input-menu {
+  width: 300px;
+  height: 25px;
+  border-radius: 30px;
+}
+
+.menu {
+  width: 90%;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+  display: flex;
+  padding-right: 30px;
+}
+.menu__nav {
+  font-weight: 700;
+  width: 840px;
+  text-align: right;
+}
+.menu__nav ul {
+  display: inline-flex;
+}
+.menu__logo {
+  font-family: "Merriweather";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+.cabecera {
+    width: 960px;
+    margin: 0 auto;
+   
+}
+.contenido {
+  &__cabecera {
+  }
+  &__listadnoticias {
+    width: 700px;
+    float: left;
+  }
+  &__noticia {
+    width: 210px;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+  }
+}
+.cuerpo {
+    width: 210px;
+    height: 300px;
+}
+.cuerpo p {
+    padding: 5px 10px;
+}
+.noticia {
+}
