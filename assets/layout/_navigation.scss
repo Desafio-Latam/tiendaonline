@@ -4,44 +4,43 @@ body * {
   font-family: $lato;
   text-decoration: none;
   box-sizing: border-box;
+  
+ 
 }
 
 .contenedor {
-    
-    
-    align-content: flex-end;
-
-   color: red;
-   width: 80%;
-   margin: 0px auto;
-   
-   
-    
-}
-.input-menu {
-    width: 300px;
-    height: 25px;
+  width: 80%;
+  margin: 0 auto;
+  &__input-menu {
     border-radius: 30px;
-}
-.menu {
+  }
+  &__logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  &__menu {
     width: 90%;
     padding: 10px;
     border-bottom: 1px solid gray;
+    display: ruby;
+  }
+  &__nav {
+    display: inline-block;
+    width:70%;
+    text-align: right;
+  }
+  &__nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  &__nav ul{
     display: flex;
-    padding-right: 30px;
-    &__nav {
-        font-weight: $latoBold;
-       
-        width: 840px;
-        text-align: right;
-    }
-    &__nav ul {
-       display: inline-flex;
-    }
-    &__logo {
-        font-family: $Merriweather ;
-        font-size: $fz-xx-large;
-        font-weight: $MerriweatherBold;
-        
-    }
+    justify-content: flex-end;
+  }
+  &__nav ul li{
+   padding-right: 20px;
+  }
+  
 }

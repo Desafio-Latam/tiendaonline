@@ -52,11 +52,25 @@ table {
   border-spacing: 0;
 }
 
-.cabecera {
+.footer {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: salmon;
+  padding: 30px;
+}
+
+.contenido {
   width: 960px;
   margin: 0 auto;
 }
-
+.contenido__cuerpo img {
+  width: 210px;
+  height: 300px;
+}
+.contenido__cuerpo p {
+  padding: 5px 10px;
+}
 .contenido__listadnoticias {
   width: 700px;
   float: left;
@@ -66,17 +80,39 @@ table {
   display: inline-block;
   margin: 5px;
   cursor: pointer;
+  clear: both;
 }
 
-.cuerpo {
-  width: 210px;
-  height: 300px;
+._section__newsletter h2 {
+  font-size: 24px;
 }
 
-.cuerpo p {
+.section__group input {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
   padding: 5px 10px;
 }
+.section__group button {
+  display: inline-block;
+  border-width: 0;
+  font-size: 13px;
+  padding: 5px 10px;
+  background-color: coral;
+  color: white;
+}
 
+@media (min-width: 576px) {
+  .contenido {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  .contenido__cuerpo img {
+    width: 100%;
+    height: auto;
+  }
+}
 /*------------Menu Section---------------------*/
 body * {
   font-family: "lato", "sans serif";
@@ -85,37 +121,71 @@ body * {
 }
 
 .contenedor {
-  align-content: flex-end;
-  color: red;
   width: 80%;
-  margin: 0px auto;
+  margin: 0 auto;
 }
-
-.input-menu {
-  width: 300px;
-  height: 25px;
+.contenedor__input-menu {
   border-radius: 30px;
 }
-
-.menu {
+.contenedor__logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.contenedor__menu {
   width: 90%;
   padding: 10px;
   border-bottom: 1px solid gray;
-  display: flex;
-  padding-right: 30px;
+  display: ruby;
 }
-.menu__nav {
-  font-weight: 700;
-  width: 840px;
+.contenedor__nav {
+  display: inline-block;
+  width: 70%;
   text-align: right;
 }
-.menu__nav ul {
-  display: inline-flex;
+.contenedor__nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
 }
-.menu__logo {
-  font-family: "Merriweather";
-  font-size: 30px;
-  font-weight: 700;
+.contenedor__nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.contenedor__nav ul li {
+  padding-right: 20px;
+}
+
+.aside__cabecera-listado {
+  width: 220px;
+  border-bottom: 1px solid gray;
+}
+.aside__listado-izquierdo {
+  width: 220px;
+  float: right;
+}
+.aside__newsletter {
+  width: 960px;
+  background-color: #f2f4f5;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.aside__newsletter H2 {
+  font-size: 24px;
+}
+.aside__tags {
+  border-bottom: 1px solid gray;
+}
+.aside__tags ul {
+  padding: 0;
+  list-style: none;
+}
+.aside__tags ul li {
+  padding: 2px 4px;
+  background-color: steelblue;
+  margin-right: 1px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
